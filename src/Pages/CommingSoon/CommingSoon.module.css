@@ -9,8 +9,12 @@
   position: relative;
   gap: 10px;
 }
-.wrapper .symbol{
-    position: absolute;
+.wrapper .symbol {
+  position: absolute;
+  top: -95vh;
+  left: -75vw;
+  width: 70vw;
+  transform: translate(50vw, 0%);
 }
 .wrapper h3 {
   color: #d7d6d2;
@@ -20,4 +24,15 @@
   font-style: normal;
   font-weight: 275;
   line-height: normal;
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper .symbol {
+    top: -25vh;
+    left: -80vw;
+    width: 90vw;
+  }
+  .wrapper h3 {
+  font-size: 40px;
+}
 }
