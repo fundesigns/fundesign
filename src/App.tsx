@@ -6,12 +6,17 @@ import {
 } from "react-router-dom";
 
 import { CommingSoon } from "./Pages/CommingSoon/CommingSoon";
+import { Home } from "./Pages/Home/Home";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Navigate to="/comingsoon" replace />,
+      element: <Navigate to="/home" replace />,
+    },
+    {
+      path: "/home",
+      element: <Home />,
     },
     {
       path: "/comingsoon",
