@@ -15,6 +15,8 @@ import hound from "../../assets/companies/houndelect.png";
 import cce from "../../assets/companies/cce.png";
 import chola from "../../assets/companies/cholaart.png";
 import unnathi from "../../assets/companies/unnathi.png";
+import { DefineUS } from "./Components/DefineUS/DefineUS";
+import { CounterContainer } from "./Components/CounterContainer/CounterContainer";
 
 export const Home = (_props: Props) => {
   const partnersData = [
@@ -32,6 +34,8 @@ export const Home = (_props: Props) => {
       <Landing />
       <Work />
       <Companies partners={partnersData} />
+      <DefineUS />
+      <CounterContainer />
       <LetsTalk />
       <Footer />
     </div>

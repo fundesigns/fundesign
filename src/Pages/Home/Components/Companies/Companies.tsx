@@ -40,7 +40,7 @@ export const Companies = ({ partners }: OurPartnersProps) => {
                 key={index}
                 style={{ padding: "0px 20px", textAlign: "center" }}
               >
-                <img src={partner.image} alt="companies" />
+                <img src={partner.image} alt="companies" loading="lazy" />
               </div>
             ))}
           </Marquee>
@@ -49,7 +49,7 @@ export const Companies = ({ partners }: OurPartnersProps) => {
           <div style={{ display: "flex" }}>
             {partners.map((partner, index) => (
               <div key={index} style={{ padding: "0px 10px" }}>
-                <img src={partner.image} alt="companies" />
+                <img src={partner.image} alt="companies" loading="lazy" />
               </div>
             ))}
           </div>

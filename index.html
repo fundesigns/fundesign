@@ -72,10 +72,18 @@
     }
   </style>
   <script>
-    $(window).load(function () {
-      $('#overlay').hide();
+    $(function () { 
+      var timer = setTimeout(function () {
+        $('#overlay').hide();
+      }, 5000); 
+
+      $(window).on('load', function () {
+        clearTimeout(timer); 
+        $('#overlay').hide();
+      });
     });
   </script>
+
 </head>
 
 <body>

@@ -74,7 +74,7 @@ export const Projects = (_props: Props) => {
       {data.map(({ image, title, description }) => {
         return (
           <div className={styles.Individual}>
-            <img src={image} alt="" />
+            <img src={image} alt="" loading="lazy" />
             <div>
               <h2>{title}</h2>
               <p>{description}</p>

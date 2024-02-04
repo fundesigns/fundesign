@@ -13,9 +13,9 @@ export const ClickArrowsvg = (_props: Props) => {
       <path
         d="M1.63782 1.63757H12.913M12.913 1.63757V12.9127M12.913 1.63757L1.63782 12.9127"
         stroke="#888888"
-        stroke-width="2.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

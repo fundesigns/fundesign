@@ -1,0 +1,49 @@
+.CounterContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10vw 6vh;
+  gap: 10vw;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.CounterComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CounterComponent h1 {
+  color: #fd2e35;
+  font-size: 65px;
+  line-height: 1;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 1088px) {
+  .CounterComponent h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .CounterContainer {
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .CounterContainer {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .CounterComponent {
+    gap: 10px;
+  }
+
+  .CounterComponent h1 {
+    font-size: 50px;
+  }
+}
