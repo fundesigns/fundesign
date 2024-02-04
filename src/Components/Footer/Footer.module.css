@@ -1,0 +1,50 @@
+.Wrapper {
+  padding: 0px 10vw 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.Header > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  justify-content: space-around;
+  max-width: 1200px;
+  width: 100%;
+}
+.Header > div a {
+  text-decoration: none;
+  color: #342020;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.copyright {
+  color: #aaa;
+  font-family: sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 20px;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+@media screen and (max-width: 830px) {
+  .Header > div a {
+    font-size: 22px;
+  }
+  .copyright {
+    justify-content: center;
+  }
+}
