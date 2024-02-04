@@ -70,36 +70,6 @@
         box-shadow: 14px 0 0 -2px, 38px 0 0 2px, -14px 0 0 -2px, -38px 0 0 -2px;
       }
     }
-
-    .wrapperOfRoot {
-      width: 100%;
-      height: 100%;
-      position: relative;
-    }
-
-    .wrapperOfRoot .leftLine {
-      height: 100%;
-      width: 2px;
-      background-color: #FD2E35;
-      position: absolute;
-      z-index: 9999;
-      left: 10vw;
-    }
-
-    .wrapperOfRoot .rightLine {
-      height: 100%;
-      width: 2px;
-      background-color: #FD2E35;
-      position: absolute;
-      z-index: 9999;
-      right: 10vw;
-      top: 0;
-
-    }
-
-    #root{
-      width: 100%;
-    }
   </style>
   <script>
     $(window).load(function () {
@@ -115,12 +85,9 @@
 
 
   </div>
-  <div class="wrapperOfRoot">
-    <div class="leftLine"></div>
-    <div id="root"></div>
-    <div class="rightLine"></div>
 
-  </div>
+  <div id="root"></div>
+
   <script type="module" src="/src/main.tsx"></script>
 </body>
 
