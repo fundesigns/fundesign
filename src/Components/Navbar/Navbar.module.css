@@ -83,6 +83,8 @@
   color: white;
   font-size: 20px;
   font-weight: 600;
+  width: fit-content;
+  align-self: center;
 }
 .navbarWrapper a {
   text-decoration: none;

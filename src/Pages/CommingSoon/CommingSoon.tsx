@@ -10,6 +10,8 @@ export const CommingSoon = (_props: Props) => {
       <img className={styles.symbol} src={symbol} alt="" />
       <img className={styles.logo} src={logo} alt="" />
       <h3>COMING SOON</h3>
+
+      <a href="/">Home</a>
     </div>
   );
 };
