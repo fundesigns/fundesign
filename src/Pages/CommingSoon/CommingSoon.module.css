@@ -8,6 +8,7 @@
   flex-direction: column;
   position: relative;
   gap: 10px;
+  font-family: "Bella";
 }
 .wrapper .symbol {
   position: absolute;
@@ -25,7 +26,13 @@
   font-weight: 275;
   line-height: normal;
 }
-
+.wrapper a {
+  background-color: #fd2e35;
+  color: white;
+  text-decoration: none;
+  padding: 10px 35px;
+  border-radius: 20px;
+}
 @media screen and (max-width: 500px) {
   .wrapper .symbol {
     top: -25vh;
@@ -33,6 +40,6 @@
     width: 90vw;
   }
   .wrapper h3 {
-  font-size: 40px;
-}
+    font-size: 40px;
+  }
 }
