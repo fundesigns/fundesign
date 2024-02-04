@@ -1,4 +1,5 @@
-import image from '../../assets/default.png'
+import image from "../../assets/default.png";
+import styles from "./Projects.module.css";
 type Props = {};
 
 export const Projects = (_props: Props) => {
@@ -14,65 +15,69 @@ export const Projects = (_props: Props) => {
       description: "Non Governmental Organization | UI/UX Design + Development",
     },
     {
-     image: image,
-      title: "OpenGrad",
-      description: " ",
+      image: image,
+      title: "CODe Design Week ‘23",
+      description: "College Event | UI/UX Design + Development",
     },
     {
-     image: image,
-      title: "OpenGrad",
-      description: " ",
+      image: image,
+      title: "Chola Art Gallery",
+      description: "Art Gallery | UI/UX Design + Development",
     },
     {
-     image: image,
-      title: "OpenGrad",
-      description: " ",
+      image: image,
+      title: "Sarahs Techno",
+      description: "Food Machine Manufacturer | UI/UX Design + Development",
     },
     {
-     image: image,
-      title: "OpenGrad",
-      description: " ",
+      image: image,
+      title: "Grand Tech Adventure",
+      description: "National Event | UI/UX Design + Development",
     },
     {
-     image: image,
-      title: "OpenGrad",
-      description: " ",
+      image: image,
+      title: "MuLearn CCE Chapter",
+      description: "Community | UI/UX Design + Development",
     },
     {
-     image: image,
-      title: "OpenGrad",
-      description: " ",
+      image: image,
+      title: "WRAP - Waste Management",
+      description: "Web Application | UI/UX Design + Development",
     },
     {
-     image: image,
-      title: "OpenGrad",
-      description: " ",
+      image: image,
+      title: "Top 100 Coders",
+      description: "National Event | UI/UX Design",
     },
     {
-     image: image,
-      title: "OpenGrad",
-      description: " ",
+      image: image,
+      title: "Creators Commune",
+      description: "Community | UI/UX Design + Development",
     },
     {
-     image: image,
-      title: "OpenGrad",
-      description: " ",
+      image: image,
+      title: "FRAM - Farmers Assistant",
+      description: "Mobile Application | UI/UX Design + Development",
     },
     {
-     image: image,
-      title: "OpenGrad",
-      description: " ",
+      image: image,
+      title: "Protoheim",
+      description: "Educational Startup | UI/UX Design",
     },
   ];
-  return <div>{data.map(({image,title,description})=>{
-    return(
-        <div>
+  return (
+    <div className={styles.Wrapper}>
+      {data.map(({ image, title, description }) => {
+        return (
+          <div className={styles.Individual}>
             <img src={image} alt="" />
             <div>
-                <h2>{title}</h2>
-                <p>{description}</p>
+              <h2>{title}</h2>
+              <p>{description}</p>
             </div>
-        </div>
-    )
-  })}</div>;
+          </div>
+        );
+      })}
+    </div>
+  );
 };
