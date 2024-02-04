@@ -1,0 +1,60 @@
+.Wrapper {
+  width: 100%;
+  background-color: white;
+  padding: 0vh 10vw 6vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.ImageContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.ImageContainer .LogoImg {
+  width: calc(70% - 5vw);
+  flex-shrink: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.ImageContainer .LogoImg img {
+  width: 100%;
+}
+.ImageContainer .LogoImg > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ImageContainer .LogoImg > div p {
+  font-size: 1.2vw;
+}
+.ImageContainer .MainImg {
+  width: 30%;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 850px) {
+  .ImageContainer .LogoImg > div p {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ImageContainer {
+    flex-direction: column;
+  }
+  .ImageContainer .LogoImg {
+    width: calc(100%);
+  }
+  .ImageContainer .LogoImg > div p {
+    font-size: 15px;
+  }
+  .ImageContainer .MainImg {
+  width: 100%;
+}
+}

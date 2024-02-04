@@ -44,7 +44,7 @@
       display: block;
       margin: 15px auto;
       position: relative;
-      color: #ffffff;
+      color: #FD2E35;
       box-sizing: border-box;
       animation: animloader 2s linear infinite;
     }
@@ -72,10 +72,18 @@
     }
   </style>
   <script>
-    $(window).load(function () {
-      $('#overlay').hide();
+    $(function () { 
+      var timer = setTimeout(function () {
+        $('#overlay').hide();
+      }, 5000); 
+
+      $(window).on('load', function () {
+        clearTimeout(timer); 
+        $('#overlay').hide();
+      });
     });
   </script>
+
 </head>
 
 <body>

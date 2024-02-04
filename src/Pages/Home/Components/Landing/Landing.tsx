@@ -1,8 +1,9 @@
+import styles from './Landing.module.css'
 
 type Props = {}
 
 export const Landing = (_props: Props) => {
   return (
-    <div>Landing</div>
+    <div className={styles.Wrapper}>Landing</div>
   )
 }

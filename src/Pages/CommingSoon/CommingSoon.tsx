@@ -7,8 +7,8 @@ type Props = {};
 export const CommingSoon = (_props: Props) => {
   return (
     <div className={styles.wrapper}>
-      <img className={styles.symbol} src={symbol} alt="" />
-      <img className={styles.logo} src={logo} alt="" />
+      <img className={styles.symbol} src={symbol} alt="" loading="lazy" />
+      <img className={styles.logo} src={logo} alt="" loading="lazy" />
       <h3>COMING SOON</h3>
 
       <a href="/">Home</a>

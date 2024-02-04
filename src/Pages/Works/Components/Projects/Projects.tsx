@@ -1,16 +1,20 @@
 import image from "../../assets/default.png";
 import styles from "./Projects.module.css";
+
+import unnathi from '../../../projectAssets/Unnathi.png'
+import opengrad from '../../../projectAssets/OpenGrad.png'
+import sarastechno from "../../../projectAssets/sarahsTechno.png";
 type Props = {};
 
 export const Projects = (_props: Props) => {
   const data = [
     {
-      image: image,
+      image: unnathi,
       title: "Unnathi (KES)",
       description: "Kerala Empowerment Society | UI/UX Design + Development",
     },
     {
-      image: image,
+      image: opengrad,
       title: "OpenGrad",
       description: "Non Governmental Organization | UI/UX Design + Development",
     },
@@ -25,7 +29,7 @@ export const Projects = (_props: Props) => {
       description: "Art Gallery | UI/UX Design + Development",
     },
     {
-      image: image,
+      image: sarastechno,
       title: "Sarahs Techno",
       description: "Food Machine Manufacturer | UI/UX Design + Development",
     },
@@ -70,7 +74,7 @@ export const Projects = (_props: Props) => {
       {data.map(({ image, title, description }) => {
         return (
           <div className={styles.Individual}>
-            <img src={image} alt="" />
+            <img src={image} alt="" loading="lazy" />
             <div>
               <h2>{title}</h2>
               <p>{description}</p>

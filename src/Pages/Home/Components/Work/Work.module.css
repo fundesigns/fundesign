@@ -1,0 +1,84 @@
+.Wrapper {
+  padding: 6vh 10vw;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Wrapper .Header {
+  width: calc(100% * (1 / 3) - 2vw);
+  text-align: left;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Wrapper .Header h1{
+    font-size: 2.3rem;
+    max-width: 300px;
+    line-height: 1.1;
+}
+
+.Wrapper .Header a{
+    color: #888888;
+}
+.WrapperProject {
+  display: flex;
+
+  width: calc(100% * (2 / 3) - 2vw);
+  gap: 3vw;
+  justify-content: space-between;
+}
+
+.WrapperProject .Individual {
+  width: calc(100% / 2 - 2vw);
+  text-align: left;
+  min-width: 300px;
+}
+
+.WrapperProject .Individual img {
+  width: 100%;
+  aspect-ratio: 528.189/359.055;
+}
+
+.WrapperProject .Individual h2 {
+  font-size: 25px;
+  font-family: fantasy;
+  font-weight: 900;
+}
+
+.WrapperProject .Individual p {
+  font-size: 14.5px;
+  line-height: 1.3;
+  color: var(--FunGrey2, #888);
+  -webkit-text-stroke-width: 0.3;
+  -webkit-text-stroke-color: var(--FunWhite, #fff);
+}
+
+@media screen and (max-width: 1220px) {
+  .WrapperProject .Individual {
+    width: calc(100% / 2 - 1.5vw);
+    min-width: 269.1px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .Wrapper {
+    justify-content: center;
+  }
+  .WrapperProject {
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
+  }
+  .WrapperProject .Individual {
+    width: calc(100%);
+    min-width: 250px;
+  }
+  .Wrapper .Header {
+    max-width: 500px;
+    width: calc(100%);
+  }
+}
