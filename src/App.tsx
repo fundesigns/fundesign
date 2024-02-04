@@ -8,9 +8,18 @@ import {
 import { CommingSoon } from "./Pages/CommingSoon/CommingSoon";
 import { Home } from "./Pages/Home/Home";
 import { Works } from "./Pages/Works/Works";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
   const router = createBrowserRouter([
+    {
+      path: "*",
+      element: <NotFound />,
+    },
+    {
+      path: "/404",
+      element: <NotFound />,
+    },
     {
       path: "/",
       element: <Navigate to="/home" replace />,
