@@ -1,3 +1,5 @@
+import { Footer } from "../../Components/Footer/Footer";
+import { LetsTalk } from "../../Components/LetsTalk/LetsTalk";
 import { Navbar } from "../../Components/Navbar/Navbar";
 import { Landing } from "./Components/Landing/Landing";
 import { Projects } from "./Components/Projects/Projects";
@@ -10,6 +12,8 @@ export const Works = (_props: Props) => {
       <Navbar />
       <Landing />
       <Projects />
+      <LetsTalk />
+      <Footer />
     </div>
   );
 }
