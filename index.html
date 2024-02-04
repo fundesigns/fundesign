@@ -1,22 +1,23 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Logo.png" />
-    <meta name="description" content="Website Design and Development" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fun Design</title>
-    <link rel="apple-touch-icon" href="/Logo.png" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-  
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/Logo.png" />
+  <meta name="description" content="Website Design and Development" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fun Design</title>
+  <link rel="apple-touch-icon" href="/Logo.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
   <style>
     #overlay {
       width: 100vw;
       height: 100vh;
       position: fixed;
       top: 0;
-      background-color: #000000;
+      background-color: #ffffff;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -25,17 +26,17 @@
       left: 0;
       gap: 10px;
     }
-  
+
     #overlay::-webkit-scrollbar {
       display: none;
       color: white;
     }
-  
+
     #overlay img {
       width: 300px;
       height: auto;
     }
-  
+
     .loader {
       width: 12px;
       height: 12px;
@@ -47,27 +48,53 @@
       box-sizing: border-box;
       animation: animloader 2s linear infinite;
     }
-  
+
     @keyframes animloader {
       0% {
         box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 -2px;
       }
-  
+
       25% {
         box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 2px;
       }
-  
+
       50% {
         box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 2px, -38px 0 0 -2px;
       }
-  
+
       75% {
         box-shadow: 14px 0 0 2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 -2px;
       }
-  
+
       100% {
         box-shadow: 14px 0 0 -2px, 38px 0 0 2px, -14px 0 0 -2px, -38px 0 0 -2px;
       }
+    }
+
+    .wrapperOfRoot {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .wrapperOfRoot .leftLine {
+      height: 100%;
+      width: 2px;
+      background-color: #FD2E35;
+      position: absolute;
+      z-index: 9999;
+      left: 10vw;
+    }
+
+    .wrapperOfRoot .rightLine {
+      height: 100%;
+      width: 2px;
+      background-color: #FD2E35;
+      position: absolute;
+      z-index: 9999;
+      right: 10vw;
+      top: 0;
+
     }
   </style>
   <script>
@@ -75,15 +102,22 @@
       $('#overlay').hide();
     });
   </script>
-  </head>
-  <body>
-    <div id="overlay">
-      <img src="/src/assets/Logo.png" alt="">
-      <span class="loader"></span>
-    
-    
-    </div>
+</head>
+
+<body>
+  <div id="overlay">
+    <img src="/src/assets/Logo.png" alt="">
+    <span class="loader"></span>
+
+
+  </div>
+  <div class="wrapperOfRoot">
+    <div class="leftLine"></div>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <div class="rightLine"></div>
+
+  </div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>

@@ -7,6 +7,7 @@ import {
 
 import { CommingSoon } from "./Pages/CommingSoon/CommingSoon";
 import { Home } from "./Pages/Home/Home";
+import { Works } from "./Pages/Works/Works";
 
 function App() {
   const router = createBrowserRouter([
@@ -17,6 +18,26 @@ function App() {
     {
       path: "/home",
       element: <Home />,
+    },
+    {
+      path: "/works",
+      element: <Works />,
+    },
+    {
+      path: "/services",
+      element: <CommingSoon />,
+    },
+    {
+      path: "/about",
+      element: <CommingSoon />,
+    },
+    {
+      path: "/careers",
+      element: <CommingSoon />,
+    },
+    {
+      path: "/blog",
+      element: <CommingSoon />,
     },
     {
       path: "/comingsoon",
