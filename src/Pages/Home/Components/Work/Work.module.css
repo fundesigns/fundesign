@@ -16,14 +16,14 @@
   flex-direction: column;
   gap: 10px;
 }
-.Wrapper .Header h1{
-    font-size: 2.3rem;
-    max-width: 300px;
-    line-height: 1.1;
+.Wrapper .Header h1 {
+  font-size: 2.3rem;
+  max-width: 300px;
+  line-height: 1.1;
 }
 
-.Wrapper .Header a{
-    color: #888888;
+.Wrapper .Header a {
+  color: #888888;
 }
 .WrapperProject {
   display: flex;
@@ -48,6 +48,7 @@
   font-size: 25px;
   font-family: fantasy;
   font-weight: 900;
+  color: #1a1a1a;
 }
 
 .WrapperProject .Individual p {
