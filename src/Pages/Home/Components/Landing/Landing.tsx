@@ -1,11 +1,11 @@
-import styles from './Landing.module.css'
-import elipse from './elipse.png'
-import mu from './assets/mulearn.png'
-import saras from './assets/saras.png'
-import unnathi from './assets/unnathi.png'
+import styles from "./Landing.module.css";
+import elipse from "./elipse.png";
+import mu from "./assets/mulearn.png";
+import saras from "./assets/saras.png";
+import unnathi from "./assets/unnathi.png";
 import chola from "./assets/chola.png";
 
-type Props = {}
+type Props = {};
 
 export const Landing = (_props: Props) => {
   return (
@@ -19,4 +19,4 @@ export const Landing = (_props: Props) => {
       </div>
     </div>
   );
-}
+};

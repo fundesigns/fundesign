@@ -16,8 +16,6 @@
 }
 
 .Wrapper img {
-  -webkit-user-drag: none;
-  user-select: none;
   min-width: 300px;
 }
 
