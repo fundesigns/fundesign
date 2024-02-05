@@ -16,7 +16,7 @@ export const Navbar = (_props: Props) => {
   const navContent = ["HOME", "WORKS", "SERVICES", "ABOUT", "CAREERS", "BLOG"];
   useEffect(() => {}, [path]);
   const changeNavBg = () => {
-    window.scrollY >= 150 ? setNavBg(true) : setNavBg(false);
+    window.scrollY >= 100 ? setNavBg(true) : setNavBg(false);
   };
 
   useEffect(() => {
@@ -34,7 +34,13 @@ export const Navbar = (_props: Props) => {
     >
       <div className={styles.navbarLeft}>
         <a href="/home">
-          <img src={logo} alt="" />
+          {/* {navbg ? <img src={logo} alt="" /> : " "} */}
+
+          <img
+            className={`${styles.logo} ${navbg ? " " : styles.hidden}`}
+            src={logo}
+            alt="logo"
+          />
         </a>
       </div>
       <div className={styles.navbarRight}>

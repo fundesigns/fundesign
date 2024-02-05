@@ -19,6 +19,12 @@
     url("./fonts/bella.regular.ttf") format("truetype");
   font-weight: 100;
 }
+@font-face {
+  font-family: "Gilroy";
+  src: local("GilroyRegular"),
+    url("./fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 100;
+}
 
 * {
   margin: 0;
@@ -50,4 +56,10 @@ button {
 }
 .colorText {
   color: #fd2e35;
+}
+
+
+img{
+    -webkit-user-drag: none;
+  user-select: none;
 }

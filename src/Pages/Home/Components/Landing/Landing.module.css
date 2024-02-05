@@ -1,23 +1,30 @@
 .Wrapper {
   width: 100%;
-  min-height: 95vh;
+  min-height: 90vh;
+  height: fit-content;
   position: relative;
   overflow: hidden;
   padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.logo {
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+.hidden {
+  opacity: 0;
 }
 
 .Wrapper .elipse {
   width: 100%;
   max-width: 1000px;
-  position: absolute;
-  bottom: 0%;
-  left: 50%;
-  transform: translate(-50%, 0%);
 }
 
 .Wrapper img {
-  -webkit-user-drag: none;
-  user-select: none;
   min-width: 300px;
 }
 
@@ -63,5 +70,33 @@
   }
   .Wrapper .NewElements .unn {
     margin-right: -5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Wrapper img {
+    min-width: 150px;
+  }
+
+  .Wrapper .elipse {
+    min-width: 150vw;
+  }
+  .Wrapper .NewElements .sar {
+    display: none;
+  }
+
+  .Wrapper .NewElements .unn {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    width: 50vw;
+  }
+
+ 
+
+  .Wrapper {
+    gap: 6vh;
   }
 }
