@@ -27,7 +27,7 @@ export const Companies = ({ partners }: OurPartnersProps) => {
     autoFill: true,
     pauseOnHover: true,
     gradient: false,
-    speed: 20,
+    speed: 30,
     drag: true,
   };
   return (

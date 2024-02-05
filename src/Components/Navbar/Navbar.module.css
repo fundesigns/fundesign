@@ -8,7 +8,7 @@
   z-index: 9990;
   backdrop-filter: blur(8px);
   top: 0;
-  font-family: 'Bella';
+  font-family: "Bella";
 }
 .navbarWrapper > div {
   width: fit-content;
@@ -18,7 +18,7 @@
   background-color: transparent;
 }
 .navbarLeft img {
-  width: 160px;
+  width: 100px;
 }
 .navbarRight > div {
   display: flex;
@@ -35,9 +35,8 @@
 .navbarWrapper .StudyButton,
 .navbarWrapper .navbarMobile > .StudyButton {
   padding: 10px 15px;
-  border-radius: 5px;
   color: #fff;
-  background-color: #FD2E35;
+  background-color: #fd2e35;
   font-weight: 600;
   margin: 0;
   border: none;
@@ -45,7 +44,7 @@
 .navbarWrapper .StudyButton {
   color: white;
   font-weight: 500;
-  font-family: 'Bella';
+  font-family: "Bella";
 }
 
 .navbarMobile {

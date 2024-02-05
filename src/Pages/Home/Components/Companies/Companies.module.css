@@ -20,20 +20,18 @@
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  gap: 20px;
+
   text-align: center;
   justify-content: space-between;
   width: 100%;
 }
 
 .Partners .PartnersImageWrapper img {
-  height: 80px !important;
+  height: 50px !important;
   object-fit: contain;
   padding: 0px 0px 10px;
   flex-shrink: 0;
-
 }
-
 
 @media screen and (max-width: 550px) {
   .Partners {
