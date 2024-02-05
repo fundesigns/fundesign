@@ -80,9 +80,9 @@ export const Projects = (_props: Props) => {
   ];
   return (
     <div className={styles.Wrapper}>
-      {data.map(({ image, title, description, link }) => {
+      {data.map(({ image, title, description, link },key) => {
         return (
-          <a href={link} target="_blank" className={styles.Individual}>
+          <a href={link} target="_blank" className={styles.Individual}  key={key}>
             <img src={image} alt="" loading="lazy" />
             <div>
               <h2>{title}</h2>
