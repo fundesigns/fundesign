@@ -29,7 +29,7 @@ export const Work = (_props: Props) => {
           Check all of our works <ClickArrowsvg />
         </a>
       </div>
-      <div className={styles.WrapperProject}>
+      <div className={styles.WrapperProject} style={{backgroundColor:"white"}}>
         {data.map(({ image, title, description, link },key) => {
           return (
             <a href={link} target="_blank" className={styles.Individual}  key={title+key}>

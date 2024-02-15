@@ -1,9 +1,24 @@
-import image from "../../assets/default.png";
+
 import styles from "./Projects.module.css";
 
 import unnathi from "../../../projectAssets/Unnathi.png";
 import opengrad from "../../../projectAssets/OpenGrad.png";
+import cdw from '../../../projectAssets/cdw.png'
 import sarastechno from "../../../projectAssets/sarahsTechno.png";
+import chola from "../../../projectAssets/chola.png";
+import gta from "../../../projectAssets/gta.png";
+import mucce from "../../../projectAssets/mucce.png";
+import wrap from "../../../projectAssets/wrap.png";
+import top100 from "../../../projectAssets/top100.png";
+import creatorcommune from "../../../projectAssets/creatorcommune.png";
+import fram from "../../../projectAssets/fram.png";
+import protoheim from "../../../projectAssets/protohein.png";
+import designathon from "../../../projectAssets/designathon.png";
+import samibagi from "../../../projectAssets/samibagi.png";
+import techletics from "../../../projectAssets/techletics.png";
+import enric from "../../../projectAssets/enricportfolio.png";
+import cupids from "../../../projectAssets/cupidchase.png";
+
 type Props = {};
 
 export const Projects = (_props: Props) => {
@@ -21,13 +36,13 @@ export const Projects = (_props: Props) => {
       link: "http://opengrad.in/",
     },
     {
-      image: image,
+      image: cdw,
       title: "CODe Design Week ‘23",
       description: "College Event | UI/UX Design + Development",
       link: "https://codedesignweek.netlify.app/",
     },
     {
-      image: image,
+      image: chola,
       title: "Chola Art Gallery",
       description: "Art Gallery | UI/UX Design + Development",
       link: "cholaart.in",
@@ -39,43 +54,71 @@ export const Projects = (_props: Props) => {
       link: "https://saras-techno.vercel.app/",
     },
     {
-      image: image,
+      image: gta,
       title: "Grand Tech Adventure",
       description: "National Event | UI/UX Design + Development",
       link: "https://gta.mulearn.org/",
     },
     {
-      image: image,
+      image: mucce,
       title: "MuLearn CCE Chapter",
       description: "Community | UI/UX Design + Development",
       link: "https://mulearn-cce.vercel.app/",
     },
     {
-      image: image,
+      image: wrap,
       title: "WRAP - Waste Management",
       description: "Web Application | UI/UX Design + Development",
       link: "https://wrap-web-app.netlify.app/",
     },
     {
-      image: image,
+      image: top100,
       title: "Top 100 Coders",
       description: "National Event | UI/UX Design",
       link: "https://top100coders.com/",
     },
     {
-      image: image,
+      image: creatorcommune,
       title: "Creators Commune",
       description: "Community | UI/UX Design + Development",
     },
     {
-      image: image,
+      image: fram,
       title: "FRAM - Farmers Assistant",
       description: "Mobile Application | UI/UX Design + Development",
     },
     {
-      image: image,
+      image: protoheim,
       title: "Protoheim",
       description: "Educational Startup | UI/UX Design",
+    },
+    {
+      image: designathon,
+      title: "Designathon ‘24",
+      description: "National Event | UI/UX Design",
+      link: "https://designathon-24.vercel.app/",
+    },
+    {
+      image: samibagi,
+      title: "Sami Bazzi",
+      description: "Portfolio | UI/UX Design",
+    },
+    {
+      image: techletics,
+      title: "Techletics ‘24",
+      description: "National Event | UI/UX Design",
+      link: "https://techletics-24.vercel.app/",
+    },
+    {
+      image: enric,
+      title: "Enric S Neelamkavil",
+      description: "Portfolio | UI/UX Design",
+    },
+    {
+      image: cupids,
+      title: "Cupid’s Chase",
+      description: "Web Application | UI/UX Design + Development",
+      link: "https://cupidschase.vercel.app/",
     },
   ];
   return (
