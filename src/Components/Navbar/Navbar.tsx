@@ -25,6 +25,13 @@ export const Navbar = (_props: Props) => {
       window.removeEventListener("scroll", changeNavBg);
     };
   }, []);
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div
       className={styles.navbarWrapper}
@@ -94,11 +101,15 @@ export const Navbar = (_props: Props) => {
                 </p>
               </a>
             ))}
-            <button className={styles.StudyButton}>CONTACT</button>
+            <button className={styles.StudyButton} onClick={scrollToContact}>
+              CONTACT
+            </button>
           </div>
         )}
       </div>{" "}
-      <button className={styles.StudyButton}>CONTACT</button>
+      <button className={styles.StudyButton} onClick={scrollToContact}>
+        CONTACT
+      </button>
     </div>
   );
 };
