@@ -3,7 +3,7 @@ type Props = {};
 
 export const LetsTalk = (_props: Props) => {
   return (
-    <div className={styles.Wrapper}>
+    <div className={styles.Wrapper} id="contact">
       <h1>
         Lets <span className="colorText">talk</span>.
       </h1>
