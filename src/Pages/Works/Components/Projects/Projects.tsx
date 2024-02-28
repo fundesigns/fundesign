@@ -33,7 +33,7 @@ export const Projects = (_props: Props) => {
       image: opengrad,
       title: "OpenGrad",
       description: "Non Governmental Organization | UI/UX Design + Development",
-      link: "http://opengrad.in/",
+      link: "https://opengrad.in/",
     },
     {
       image: cdw,
@@ -45,7 +45,7 @@ export const Projects = (_props: Props) => {
       image: chola,
       title: "Chola Art Gallery",
       description: "Art Gallery | UI/UX Design + Development",
-      link: "cholaart.in",
+      link: "https://cholaart.in",
     },
     {
       image: sarastechno,
