@@ -30,6 +30,7 @@ export const Navbar = (_props: Props) => {
     const contactSection = document.getElementById("contact");
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: "smooth" });
+      setopenmenu(!openmenu);
     }
   };
   return (

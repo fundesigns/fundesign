@@ -18,7 +18,8 @@ export const LetsTalk = (_props: Props) => {
         <div>
           <a href="mailto:fundesignindia@gmail.com">fundesignindia@gmail.com</a>
           <div className={styles.phone}>
-            <a href="tel:+917994043754">+91 79940 43754</a> |
+            <a href="tel:+917994043754">+91 79940 43754</a>
+            <p>|</p>
             <a href="tel:+919400743624">+91 94007 43624</a>
           </div>
         </div>

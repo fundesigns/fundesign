@@ -1,0 +1,32 @@
+.Wrapper {
+  width: 100%;
+  padding: 6vh 10vw 6vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  align-items: flex-start;
+}
+
+.Wrapper > div img {
+  width: 100%;
+}
+.Wrapper > div .mobiles{
+    display: none;
+}
+@media screen and (max-width: 500px) {
+  .Wrapper {
+    align-items: center;
+  }
+  .Wrapper h1{
+    align-self: flex-start;
+  }
+  .Wrapper > div .imageset {
+    display: none;
+  }
+  .Wrapper > div .mobiles{
+    display: block;
+}
+  .Wrapper > div img {
+    max-width: 280px;
+  }
+}
