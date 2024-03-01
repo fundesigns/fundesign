@@ -72,8 +72,13 @@
   }
   .phone {
     font-size: 30px;
+    flex-direction: column;
+    gap: 15px;
   }
   .Container a {
     font-size: 1.3rem;
   }
+   .phone >p{
+    display: none;
+   }
 }

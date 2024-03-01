@@ -13,6 +13,9 @@
 .navbarWrapper > div {
   width: fit-content;
 }
+.navbarWrapper button{
+  background-color: transparent;
+}
 .navbarLeft {
   width: fit-content;
   background-color: transparent;

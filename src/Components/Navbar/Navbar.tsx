@@ -4,11 +4,13 @@ import { useState, useEffect } from "react";
 import { useReactPath } from "./path.hook";
 import { MdMenu } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 type Props = {};
 
 export const Navbar = (_props: Props) => {
   const [openmenu, setopenmenu] = useState(false);
   const [navbg, setNavBg] = useState(false);
+  const navigate = useNavigate();
   function openMenu() {
     setopenmenu(!openmenu);
   }
@@ -30,8 +32,14 @@ export const Navbar = (_props: Props) => {
     const contactSection = document.getElementById("contact");
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: "smooth" });
+      setopenmenu(!openmenu);
     }
   };
+
+  const renderLinks = (value: string) => {
+    navigate(`/${value}`);
+  };
+
   return (
     <div
       className={styles.navbarWrapper}
@@ -40,22 +48,22 @@ export const Navbar = (_props: Props) => {
       }}
     >
       <div className={styles.navbarLeft}>
-        <a href="/home">
-          {/* {navbg ? <img src={logo} alt="" /> : " "} */}
-
+        <button onClick={() => navigate("/home")}>
           <img
             className={`${styles.logo} ${navbg ? " " : styles.hidden}`}
             src={logo}
             alt="logo"
           />
-        </a>
+        </button>
       </div>
       <div className={styles.navbarRight}>
         <div>
           {navContent.map((content, i) => (
-            <a
-              href={`/${content.toLowerCase().replace(/\s+/g, "")}`}
-              key={i.toString() + content}
+            <button
+              onClick={() =>
+                renderLinks(content.toLowerCase().replace(/\s+/g, ""))
+              }
+              key={i}
             >
               <p
                 style={{
@@ -70,7 +78,7 @@ export const Navbar = (_props: Props) => {
               >
                 {content}
               </p>
-            </a>
+            </button>
           ))}
         </div>
       </div>
@@ -84,12 +92,16 @@ export const Navbar = (_props: Props) => {
               <IoMdClose />
             </button>
             {navContent.map((content, i) => (
-              <a
-                href={`/${content.toLowerCase().replace(/\s+/g, "")}`}
-                key={i.toString() + content}
+              <button
+                onClick={() =>
+                  renderLinks(content.toLowerCase().replace(/\s+/g, ""))
+                }
+                key={i}
               >
                 <p
                   style={{
+                    fontSize: "17px",
+                    fontWeight: 600,
                     color: window.location.href.includes(
                       `/${content.toLowerCase().replace(/\s+/g, "")}`
                     )
@@ -99,7 +111,7 @@ export const Navbar = (_props: Props) => {
                 >
                   {content}
                 </p>
-              </a>
+              </button>
             ))}
             <button className={styles.StudyButton} onClick={scrollToContact}>
               CONTACT

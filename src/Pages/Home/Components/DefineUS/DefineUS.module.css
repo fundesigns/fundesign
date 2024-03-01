@@ -21,6 +21,7 @@
   text-align: left;
   display: flex;
   flex-direction: column;
+  font-family: "Gilroy";
 }
 .ImageContainer .LogoImg img {
   width: 100%;
@@ -55,6 +56,6 @@
     font-size: 15px;
   }
   .ImageContainer .MainImg {
-  width: 100%;
-}
+    width: 100%;
+  }
 }
