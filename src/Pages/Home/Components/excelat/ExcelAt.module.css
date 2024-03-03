@@ -5,27 +5,28 @@
   flex-direction: column;
   gap: 3vh;
   align-items: flex-start;
+  background-color: rgba(255, 249, 250, 0.6);
 }
 
 .Wrapper > div img {
   width: 100%;
 }
-.Wrapper > div .mobiles{
-    display: none;
+.Wrapper > div .mobiles {
+  display: none;
 }
 @media screen and (max-width: 500px) {
   .Wrapper {
     align-items: center;
   }
-  .Wrapper h1{
+  .Wrapper h1 {
     align-self: flex-start;
   }
   .Wrapper > div .imageset {
     display: none;
   }
-  .Wrapper > div .mobiles{
+  .Wrapper > div .mobiles {
     display: block;
-}
+  }
   .Wrapper > div img {
     max-width: 280px;
   }
