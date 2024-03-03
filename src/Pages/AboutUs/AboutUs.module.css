@@ -1,11 +1,16 @@
 .Wrapper {
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 3vh;
   width: 100%;
+  background-color: white;
 }
 .Wrapper .InnerSegment {
   padding: 100px 10vw 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  height: 100%;
 }
