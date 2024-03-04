@@ -4,29 +4,3 @@
   flex-direction: column;
   gap: 2vh;
 }
-
-.Wrapper h1 {
-  text-transform: uppercase;
-  align-self: flex-start;
-}
-
-.Wrapper p {
-  font-size: 18px;
-}
-
-.Wrapper .Boxes{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.Wrapper .Boxes>div{
-    background-color: #FD2E35;
-    height: fit-content;
-    padding: 20px;
-    border-radius: 10px;
-    min-width: 300px;
-    color: white;
-    width: calc(100% / 3  - 2vw);
-}
