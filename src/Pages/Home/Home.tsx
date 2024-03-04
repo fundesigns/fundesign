@@ -31,8 +31,14 @@ export const Home = (_props: Props) => {
     { image: chola },
     { image: unnathi },
   ];
+
+  const preventRightClick = (
+    event: React.MouseEvent<HTMLImageElement, MouseEvent>
+  ) => {
+    event.preventDefault();
+  };
   return (
-    <div className={styles.Wrapper}>
+    <div className={styles.Wrapper} onContextMenu={preventRightClick}>
       <Navbar />
       <Landing />
       <Work />

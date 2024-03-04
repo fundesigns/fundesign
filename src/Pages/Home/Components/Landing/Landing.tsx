@@ -25,6 +25,8 @@ export const Landing = (_props: Props) => {
     };
   }, []);
 
+
+
   return (
     <div className={styles.Wrapper} id="landing">
       <img
@@ -37,6 +39,7 @@ export const Landing = (_props: Props) => {
         className={styles.elipse}
         src={elipse}
         alt=""
+        id="contextmenu"
       />
       <div className={styles.NewElements}>
         <img
