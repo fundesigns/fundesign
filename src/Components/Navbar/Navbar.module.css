@@ -15,6 +15,7 @@
 }
 .navbarWrapper button{
   background-color: transparent;
+   font-family: "Bella";
 }
 .navbarLeft {
   width: fit-content;

@@ -15,7 +15,7 @@ export const Navbar = (_props: Props) => {
     setopenmenu(!openmenu);
   }
   const path = useReactPath();
-  const navContent = ["HOME", "WORKS", "SERVICES", "ABOUT", "CAREERS", "BLOG"];
+  const navContent = ["HOME", "WORKS", "SERVICES", "ABOUT"];
   useEffect(() => {}, [path]);
   const changeNavBg = () => {
     window.scrollY >= 100 ? setNavBg(true) : setNavBg(false);

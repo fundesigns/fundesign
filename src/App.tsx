@@ -9,6 +9,7 @@ import { CommingSoon } from "./Pages/CommingSoon/CommingSoon";
 import { Home } from "./Pages/Home/Home";
 import { Works } from "./Pages/Works/Works";
 import NotFound from "./Pages/NotFound/NotFound";
+import { AboutUs } from "./Pages/AboutUs/AboutUs";
 
 function App() {
   const router = createBrowserRouter([
@@ -38,7 +39,7 @@ function App() {
     },
     {
       path: "/about",
-      element: <CommingSoon />,
+      element: <AboutUs />,
     },
     {
       path: "/careers",
