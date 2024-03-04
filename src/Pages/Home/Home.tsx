@@ -38,7 +38,11 @@ export const Home = (_props: Props) => {
     event.preventDefault();
   };
   return (
-    <div className={styles.Wrapper} onContextMenu={preventRightClick}>
+    <div
+      className={styles.Wrapper}
+      onContextMenu={preventRightClick}
+      id="landing"
+    >
       <Navbar />
       <Landing />
       <Work />

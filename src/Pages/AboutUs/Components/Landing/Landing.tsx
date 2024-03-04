@@ -4,7 +4,7 @@ type Props = {}
 
 export const Landing = (_props: Props) => {
   return (
-    <div className={styles.Wrapper}>
+    <div className={styles.Wrapper}  id="landing">
       <img src={landing} alt="" loading="lazy" />
       <h1>
         ABOUT <span className="colorText">US</span>.

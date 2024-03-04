@@ -13,7 +13,7 @@ export const Works = (_props: Props) => {
       event.preventDefault();
     };
   return (
-    <div onContextMenu={preventRightClick}>
+    <div onContextMenu={preventRightClick} id="landing">
       <Navbar />
       <Landing />
       <Projects />

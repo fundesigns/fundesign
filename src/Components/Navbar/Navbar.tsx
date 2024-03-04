@@ -38,6 +38,7 @@ export const Navbar = (_props: Props) => {
 
   const renderLinks = (value: string) => {
     navigate(`/${value}`);
+    window.scrollTo(0, 0);
   };
 
   return (

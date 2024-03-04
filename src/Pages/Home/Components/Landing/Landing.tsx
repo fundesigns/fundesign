@@ -28,7 +28,7 @@ export const Landing = (_props: Props) => {
 
 
   return (
-    <div className={styles.Wrapper} id="landing">
+    <div className={styles.Wrapper} >
       <img
         className={`${styles.logo} ${navbg ? styles.hidden : ""}`}
         src={logo}
