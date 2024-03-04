@@ -7,8 +7,13 @@ import { Projects } from "./Components/Projects/Projects";
 type Props = {}
 
 export const Works = (_props: Props) => {
+    const preventRightClick = (
+      event: React.MouseEvent<HTMLImageElement, MouseEvent>
+    ) => {
+      event.preventDefault();
+    };
   return (
-    <div>
+    <div onContextMenu={preventRightClick}>
       <Navbar />
       <Landing />
       <Projects />
