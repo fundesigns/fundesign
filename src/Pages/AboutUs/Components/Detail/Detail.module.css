@@ -4,3 +4,16 @@
   flex-direction: column;
   gap: 2vh;
 }
+
+
+.Wrapper img{
+  width: 100%;
+}
+
+.Wrapper >div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
