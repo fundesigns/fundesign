@@ -1,0 +1,45 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  align-items: center;
+}
+
+.Wrapper > div {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  justify-content: space-around;
+}
+
+.Wrapper > div > div {
+  width: calc(100% / 3 - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Wrapper > div > div img {
+  width: 100%;
+}
+.Wrapper .ButtonWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.Wrapper button {
+  background-color: transparent;
+  color: black;
+  font-size: 30px;
+}
+.Wrapper button:hover {
+  color: rgba(253, 46, 53, 1);
+}
+
+@media screen and (max-width: 750px) {
+  .Wrapper > div > div {
+    width: calc(100% / 2 - 20px);
+  }
+}
