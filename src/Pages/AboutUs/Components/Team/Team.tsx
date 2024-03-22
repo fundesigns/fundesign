@@ -54,7 +54,7 @@ export const Team = (_props: Props) => {
   return (
     <div className={styles.Wrapper}>
       <h1>
-        <span className={styles.colorText}>Creatives</span> at Fun Designs.
+        <span className="colorText">Creatives</span> at Fun Designs.
       </h1>
       <div>
         {data.map((item, index) => (
@@ -66,7 +66,7 @@ export const Team = (_props: Props) => {
             />
             <div>
               <h2>{item.name}</h2>
-              <p className={styles.colorText}>{item.desig}</p>
+              <p className="colorText">{item.desig}</p>
             </div>
             <div className={styles.ButtonWrapper}>
               {item.github && (
